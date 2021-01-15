@@ -292,3 +292,5 @@ Merchants, Riders, and Users can view these transaction details as it concerns t
 It was a lot of fun building this project, despite the distractions and commitments on the side and the January rush to accomplish a lot in a little time. The documentation is excellently put together. But there were a couple of gotchas that took a bit of trial and error to figure out - i.e. that the transaction meta-objects only accept a flat JSON file and would throw errors on encountering nested JSON files, etc.
 
 Overall, I think the new version of the API is solidly put together and should be quite easy to understand and develop products with by all skill levels of developers.
+
+![thumbs up](https://i.ibb.co/LkJSLVB/thumbs-up-512.png)
