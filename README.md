@@ -166,8 +166,8 @@ The process is as follows:
 * Once this link is received, the Express App returns the link as a response to the react application that upon receipt opens the link to show the Flutterwave payment modal.
 * You can use the following Test Card information to complete the payment:
 
-```javascript
-        Card number: 5531 8866 5214 2950
+```python
+        CardNumber: 5531 8866 5214 2950
         
         CVV: 564
         
