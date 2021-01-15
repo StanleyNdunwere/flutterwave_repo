@@ -166,7 +166,7 @@ The process is as follows:
 * Once this link is received, the Express App returns the link as a response to the react application that upon receipt opens the link to show the Flutterwave payment modal.
 * You can use the following Test Card information to complete the payment:
 
-```python
+```javascript
         Card number: 5531 8866 5214 2950
         
         CVV: 564
@@ -289,7 +289,7 @@ Merchants, Riders, and Users can view these transaction details as it concerns t
 
 # Conclusion
 
-It was a lot of fun building this project, despite the distractions and commitments on the side and the January rush to accomplish a lot in a little time. The documentation is excellently put together. But there were a couple of gotchas that took a bit of trial and error to figure out - i.e. that the transaction meta-objects only accept a flat JSON file and would throw errors on encountering nested JSON files, etc.
+It was a lot of fun building this project, despite the distractions and commitments on the side and the January rush to accomplish a lot in a little time. The documentation is excellently put together. But there were a couple of gotchas that took a bit of trial and error to figure out - i.e. that the transaction meta-objects only accept a flat JSON object and would throw errors on encountering nested JSON objects, etc.
 
 Overall, I think the new version of the API is solidly put together and should be quite easy to understand and develop products with by all skill levels of developers.
 
