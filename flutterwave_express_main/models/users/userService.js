@@ -29,7 +29,7 @@ const createUser = async ({ body: userData }, res) => {
     bankCode: "044",//cannnot test with any other bank except access bank from api
     bankName: "Access Bank",
     // accountNumber: rotateAccountNumbers(),
-    accountNumber: "0690000037",
+    accountNumber: userData.accountNumber,
   };
 
   // if (userData.accountType === ADMIN) {
