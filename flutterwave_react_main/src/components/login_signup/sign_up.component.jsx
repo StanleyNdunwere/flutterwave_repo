@@ -220,7 +220,7 @@ export default function SignUpComponent(props) {
                     className="outline-none bg-transparent border-b-2 border-gray-600 mb-0 rounded-sm font-nunito h-8 text-decoration-none w-full"
                   >
                     <option value=""> </option>
-
+                    <option value="admin">Admin</option>
                     <option value="user">User</option>
                     <option value="merchant">Merchant</option>
                     <option value="dispatch_rider">Dispatch Rider</option>

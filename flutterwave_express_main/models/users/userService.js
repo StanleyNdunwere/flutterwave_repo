@@ -32,13 +32,13 @@ const createUser = async ({ body: userData }, res) => {
     accountNumber: "0690000037",
   };
 
-  if (userData.accountType === ADMIN) {
-    res.header({ status: 400 }).send({
-      status: 'failed',
-      message: "Cannot provision an admin account for you sorry",
-    })
-    return;
-  }
+  // if (userData.accountType === ADMIN) {
+  //   res.header({ status: 400 }).send({
+  //     status: 'failed',
+  //     message: "Cannot provision an admin account for you sorry",
+  //   })
+  //   return;
+  // }
 
   const hashedPassword = await bcrypt.hash(userData.password, saltCount);
 

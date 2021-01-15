@@ -23,7 +23,9 @@ const getAllOrders = async (req, res) => {
   } else if (req.user.accountType === USER) {
     orders = await Order.find({ userId: req.user.userId });
   }
-
+  orders.forEach(order => {
+    order.productImageLink = "http://" + req.headers.host + order.productImageLink;
+  })
   res.header({ status: 200 }).send({
     status: "success",
     data: {
@@ -142,7 +144,7 @@ const completeRegistration = async (req, res) => {
   const newUserInfoList = await User.find({ _id: mongoose.Types.ObjectId(req.user.userId) }).select("-password")
   const newUserInfo = newUserInfoList[0]
   if (req.user.accountType === MERCHANT) {
-    const defaultProductImageLink = "http://" + req.headers.host + "/uploads/shopping_bag.png"
+    const defaultProductImageLink = "/uploads/shopping_bag.png"
     const dataBody = singlePaymentDataTemplate("20", "USD", req.user.userId,
       { name: newUserInfo.username, email: newUserInfo.accountEmail, phonenumber: "08002255443" },
       { customerId: req.user.userId, username: req.user.username, email: (newUserInfo.accountEmail).toString(), productImageLink: defaultProductImageLink, transactionType: "registration" });
@@ -231,7 +233,7 @@ const processDirectSingleOrder = async (req, res) => {
     riderName: dispatcher.username,
     productId: product._id.toString(),
     productName: product.name,
-    productImageLink: "http://" + req.headers.host + product.productImageLink,
+    productImageLink: product.productImageLink,
     quantity: quantity.toString(),
     totalProductPricePaid: totalProductPrice.toString(),
     totalDeliveryPricePaid: (totalDeliveryPrice.toString()),
@@ -396,7 +398,7 @@ const getMetaAndSubAccountSplitForProductsInCart = async (productAndQtyDetails, 
       riderName: dispatcher.username,
       productId: product._id.toString(),
       productName: product.name,
-      productImageLink: productImageLinkStub + product.productImageLink,
+      productImageLink: product.productImageLink,
       quantity: item.quantity.toString(),
       totalAmount: (totalDeliveryPrice + totalProductPrice).toString(),
       totalProductPricePaid: totalProductPrice.toString(),
