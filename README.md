@@ -74,7 +74,9 @@ To do this:
 Once completed the React application should be able to send requests to the express app without issues.
 
 # General High-Level Overview of The Application Architecture
+
 ![architecture jumga](https://i.ibb.co/GxZyH6m/uml-for-flutterwave.jpg)
+
 # Modifying The .env on The Express JS Application
 
 The .env file can be found at the root of the express application and contains some predefined values necessary for the express application to work as intended.
@@ -97,7 +99,9 @@ In this case, it'll be:
 The URL to be used is the URL for the Express JS application which should be running on port 4100.
 
 Ngrok will create a secure subdomain for your application that will make it accessible on the internet for a period that should be sufficient for the testing process.
+
 ![ngrok view](https://i.ibb.co/dr2z7pw/ngrok.jpg)
+
 Copy the forwarding address as it'll be needed to configure the express application to receive requests from Flutterwave. From the screenshot, the address shall be:
 
 https://730d651261a1.ngrok.io  (The HTTPS link is preferred as it is SSL encrypted)
