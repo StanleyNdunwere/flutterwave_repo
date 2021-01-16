@@ -258,9 +258,9 @@ In this payment mode, users/guests view product information and proceed to make 
 
 The Express JS application does the job of fetching the product information including prices and delivery fees and using the split ratio stipulated in the project rules, splits the amount among merchants and riders respectively. All other platform fees are passed to the customer.
 
-To generate the request payload, the express application fetches the merchant and dispatch rider associated with the merchants, retrieves their payment/subaccount keys, and generates a subaccount object with the amounts they are to receive using the flat_subaccount flutterwave payment scheme/transaction_charge_type.
+To generate the request payload, the express application fetches the merchant and dispatch rider associated with the product, retrieves their payment/subaccount keys, and generates a subaccount object with the amounts they are to receive using the flat_subaccount transaction_charge_type.
 
-Other information is stored in the meta and customer object and the request object is passed to the product payment handler that proceeds to initiate the transaction process. Once Flutterwave verifies the request body it generates the payment link which we use to complete and verify the payment.
+Other information is stored in the meta and customer object and the request object is passed to the product payment handler that proceeds to initiate the payment process. Once Flutterwave verifies the request body it generates the payment link which we use to complete and verify the payment.
 
 Both Merchant and Rider are compensated according to the split ratio and not one cent more.
 
