@@ -73,6 +73,10 @@ To do this:
 
 Once completed the React application should be able to send requests to the express app without issues.
 
+
+![Jumga Homepage](https://i.ibb.co/YBsMd1r/jumga-homepage.jpg)
+
+
 # General High-Level Overview of The Application Architecture
 
 ![architecture jumga](https://i.ibb.co/GxZyH6m/uml-for-flutterwave.jpg)
