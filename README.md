@@ -159,6 +159,23 @@ Once you click on the Register Button, the app performs two operations:
 
 Once the account registration is complete you can begin to access the customized mini-dashboard depending on your account type - if you are registered as a User, Admin, or Dispatch Rider. To access your account you need to login to the platform using the login button located at the top right corner of the screen.
 
+## List Of Pre-Seeded Accounts
+To ease the testing process, I’ve seeded the application with a few accounts with the details below:
+#### All Accounts’ Password: 
+```sh
+flutterwave
+```
+#### Usernames
+* Admin
+* Merchant1
+* Merchant2
+* Rider1
+* Rider2
+* Rider3
+* User1
+Note: The usernames are case-sensitive
+
+
 # Registration Fee For Merchants:
 
 Merchant accounts are required to pay a 20 USD Registration Fee to use the platform. For this reason, while registered merchants can log in to their account on Jumga, they'll be unable to view or access their dashboard until they make the payment of $20 to Jumga.
