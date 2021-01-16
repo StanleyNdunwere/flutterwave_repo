@@ -173,8 +173,8 @@ flutterwave
 * Rider2
 * Rider3
 * User1
-Note: The usernames are case-sensitive
 
+Note: The usernames are case-sensitive
 
 # Registration Fee For Merchants:
 
