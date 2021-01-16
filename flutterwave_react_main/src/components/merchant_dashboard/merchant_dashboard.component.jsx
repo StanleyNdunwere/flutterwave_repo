@@ -261,7 +261,7 @@ export default function MerchantDashboard(props) {
                           />
                         </div>
                         <h3 className="font-nunito font-bold text-xl pt-3 text-center">
-                          No Items In Cart
+                          No Orders Linked To Your Account Yet
                       </h3>
                       </>
                     </>

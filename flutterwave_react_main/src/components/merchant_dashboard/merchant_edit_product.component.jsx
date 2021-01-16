@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 export default function MerchantEditProduct(props) {
   const history = useHistory();
   return (
-    <div style={{zIndex:"-5"}} className="h-full min-w-productCard w-productCard mx-4 shadow-lg overflow-hidden rounded-4xl relative z-index-0">
+    <div style={{zIndex:"0"}} className="h-full min-w-productCard w-productCard mx-4 shadow-lg overflow-hidden rounded-4xl relative z-index-0">
       <img
         src={props.product.productImageLink}
         alt="productImage"

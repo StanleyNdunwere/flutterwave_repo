@@ -77,7 +77,7 @@ export default function ProductEditCreate(props) {
         <form>
           <div className="w-full my-10 p-8 px-28 h-productDetail grid grid-cols-2 items-center">
             <div
-              style={{ zIndex: "-10" }}
+              style={{ zIndex: "0" }}
               className="mx-10 w-productDetail overflow-hidden shadow-around rounded-4xl h-productDetail self-start z-index-0"
             >
               <div className=" mx-auto w-full h-full flex justify-center items-center relative">
