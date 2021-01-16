@@ -8,11 +8,11 @@ On Jumga there exist several accounts that can register and use the platform:
 
 Merchants: They register on the platform and create products with a price tag for customers or users to purchase
 
-Dispatch Riders: They register on the platform to help merchants deliver the products they've purchase to the end-users
+Dispatch Riders: They register on the platform to help merchants deliver the purchased products to the end-users
 
 Users: They register on the platform to look through and purchase products from merchants and have registered riders deliver these products to them
 
-Guests: These are special cases of users who would rather not register on the platform but still want to make purchases nonetheless
+Guests: These are special cases of users who would rather not register on the platform but want to make purchases nonetheless
 
 Admin: A regulatory account that oversees the entire operations of Jumga Store.
 
@@ -79,7 +79,7 @@ Once completed the React application should be able to send requests to the expr
 
 # Modifying The .env on The Express JS Application
 
-The .env file can be found at the root of the express application and contains some predefined values necessary for the express application to work as intended.
+The .env file can be found at the root of the express application and contains some predefined values necessary for the express application to work as intended. Including the .env file in a public repository was a deliberate decision. All the information contained therein belong to test environments that have to ties with any live or critical infrastructure and will be rendered redundant upon conclusion of this project.
 
 # Setting Up NGROK for Handling Callback and Redirects From Flutterwave Payments API
 
@@ -153,7 +153,7 @@ Once you click on the Register Button, the app performs two operations:
 
 2. Creates a sub-account for you on Flutterwave under the Jumga shop (Flutterwave account). Via this account merchants and dispatch riders can receive their payments. The subaccount id and Keys are retrieved and stored on the Jumga Platform to be used during payment processing. This is possible through the Flutterwave SubAccount API that supports creating, updating, accessing, and deletion of subaccounts via API requests.
 
-Once the account registration is complete you can begin to access the customized mini-dashboard depending on your account type - if you are registered as a User, Admin, or Dispatch Rider.
+Once the account registration is complete you can begin to access the customized mini-dashboard depending on your account type - if you are registered as a User, Admin, or Dispatch Rider. To access your account you need to login to the platform using the login button located at the top right corner of the screen.
 
 # Registration Fee For Merchants:
 
